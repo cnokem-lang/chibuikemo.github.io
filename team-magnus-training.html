@@ -1,0 +1,218 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Team Magnus Training</title>
+<style>
+  :root {
+    --bg: #0f1b2d;
+    --bg2: #16263f;
+    --ink: #f4f1ea;
+    --muted: #b9c2d0;
+    --accent: #e8b04a;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body { height: 100%; background: var(--bg); color: var(--ink);
+    font-family: Georgia, "Times New Roman", serif; overflow: hidden; }
+  .slide {
+    position: absolute; inset: 0;
+    display: flex; flex-direction: column; justify-content: center;
+    padding: 6vh 9vw;
+    background: radial-gradient(circle at 85% 15%, var(--bg2), var(--bg) 70%);
+    opacity: 0; visibility: hidden; transition: opacity .4s ease;
+  }
+  .slide.active { opacity: 1; visibility: visible; }
+  .num {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: clamp(14px, 1.6vw, 20px); letter-spacing: .25em;
+    text-transform: uppercase; color: var(--accent); margin-bottom: 2.5vh;
+  }
+  h1 { font-size: clamp(34px, 6vw, 84px); line-height: 1.05; margin-bottom: 4vh; }
+  .statement {
+    font-size: clamp(20px, 2.8vw, 38px); line-height: 1.35;
+    border-left: 4px solid var(--accent); padding-left: 1.2em;
+    margin-bottom: 4vh; max-width: 30em;
+  }
+  .explain {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: clamp(16px, 1.8vw, 24px); line-height: 1.6;
+    color: var(--muted); max-width: 42em;
+  }
+  .title-slide { align-items: center; text-align: center; }
+  .title-slide h1 { font-size: clamp(44px, 9vw, 130px); margin-bottom: 2vh; }
+  .title-slide .rule { width: 120px; height: 4px; background: var(--accent); margin: 3vh auto; }
+  .title-slide p {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: clamp(18px, 3vw, 40px); letter-spacing: .3em;
+    text-transform: uppercase; color: var(--muted);
+  }
+  .nav {
+    position: fixed; bottom: 3vh; right: 4vw; z-index: 10;
+    display: flex; gap: 12px; align-items: center;
+    font-family: "Helvetica Neue", Arial, sans-serif; color: var(--muted); font-size: 14px;
+  }
+  .nav button {
+    background: transparent; color: var(--ink); border: 1px solid var(--muted);
+    width: 40px; height: 40px; border-radius: 50%; font-size: 18px; cursor: pointer;
+  }
+  .nav button:hover { border-color: var(--accent); color: var(--accent); }
+  .bar { position: fixed; left: 0; bottom: 0; height: 4px; background: var(--accent);
+    transition: width .4s ease; z-index: 10; }
+  @media print {
+    html, body { overflow: visible; height: auto; }
+    .slide { position: relative; opacity: 1; visibility: visible;
+      height: 100vh; page-break-after: always; }
+    .nav, .bar { display: none; }
+  }
+</style>
+</head>
+<body>
+
+<section class="slide title-slide active">
+  <h1>Team Magnus</h1>
+  <div class="rule"></div>
+  <p>Team Training</p>
+</section>
+
+<section class="slide">
+  <div class="num">Law 1</div>
+  <h1>The Law of Intentionality</h1>
+  <p class="statement">Growth does not happen automatically with time.</p>
+  <p class="explain">You must create a deliberate plan and take action immediately rather than waiting for the right moment.</p>
+</section>
+
+<section class="slide">
+  <div class="num">Law 2</div>
+  <h1>The Law of Awareness</h1>
+  <p class="statement">You must know yourself to grow yourself.</p>
+  <p class="explain">Honestly assess your strengths, weaknesses, interests, and values so you can choose the right direction.</p>
+</section>
+
+<section class="slide">
+  <div class="num">Law 3</div>
+  <h1>The Law of the Mirror</h1>
+  <p class="statement">You must see value in yourself before you can add value to yourself.</p>
+  <p class="explain">Low self-esteem puts a ceiling on your potential and stops you from investing in your own future.</p>
+</section>
+
+<section class="slide">
+  <div class="num">Law 4</div>
+  <h1>The Law of Reflection</h1>
+  <p class="statement">Learning to pause allows growth to catch up with you.</p>
+  <p class="explain">Taking quiet time to evaluate your experiences turns everyday events into practical wisdom.</p>
+</section>
+
+<section class="slide">
+  <div class="num">Law 5</div>
+  <h1>The Law of Consistency</h1>
+  <p class="statement">Discipline, rather than fleeting motivation, is what sustains daily growth.</p>
+  <p class="explain">Motivation comes and goes, but small actions repeated every day compound into lasting progress.</p>
+</section>
+
+<section class="slide">
+  <div class="num">Law 6</div>
+  <h1>The Law of Environment</h1>
+  <p class="statement">Growth requires supportive surroundings and people who push you to excel.</p>
+  <p class="explain">If you are the biggest fish in your pond, find a bigger pond. The people and places around you shape how far you go.</p>
+</section>
+
+<section class="slide">
+  <div class="num">Law 7</div>
+  <h1>The Law of Design</h1>
+  <p class="statement">You must build deliberate systems and structured schedules to maximize your potential.</p>
+  <p class="explain">Good intentions are not enough. Plan your days and build routines that make growth the default.</p>
+</section>
+
+<section class="slide">
+  <div class="num">Law 8</div>
+  <h1>The Law of Pain</h1>
+  <p class="statement">Transforming negative experiences into lessons is essential for deep development.</p>
+  <p class="explain">Everyone faces setbacks. Those who grow are the ones who ask what the pain can teach them.</p>
+</section>
+
+<section class="slide">
+  <div class="num">Law 9</div>
+  <h1>The Law of the Ladder</h1>
+  <p class="statement">Character and personal integrity dictate how high you can climb.</p>
+  <p class="explain">Skills may take you up, but only strong character keeps you there.</p>
+</section>
+
+<section class="slide">
+  <div class="num">Law 10</div>
+  <h1>The Law of the Rubber Band</h1>
+  <p class="statement">Progress requires maintaining healthy tension by constantly stretching past your comfort zone.</p>
+  <p class="explain">A rubber band is only useful when it is stretched. Keep the gap between where you are and where you could be.</p>
+</section>
+
+<section class="slide">
+  <div class="num">Law 11</div>
+  <h1>The Law of Trade-Offs</h1>
+  <p class="statement">Moving to a higher level demands sacrificing old habits and short-term comforts.</p>
+  <p class="explain">You have to give up to go up. Be willing to let go of what is good to reach what is better.</p>
+</section>
+
+<section class="slide">
+  <div class="num">Law 12</div>
+  <h1>The Law of Curiosity</h1>
+  <p class="statement">Asking "why" and maintaining a beginner's eagerness fuels adaptability.</p>
+  <p class="explain">Curious people keep learning, and those who keep learning keep growing in a changing world.</p>
+</section>
+
+<section class="slide">
+  <div class="num">Law 13</div>
+  <h1>The Law of Modeling</h1>
+  <p class="statement">Learning from established mentors and coaches accelerates improvement.</p>
+  <p class="explain">It is hard to improve when you have no one to follow. Good models show you what is possible and how to get there.</p>
+</section>
+
+<section class="slide">
+  <div class="num">Law 14</div>
+  <h1>The Law of Expansion</h1>
+  <p class="statement">Expanding your mindset naturally increases your capacity for bigger responsibilities.</p>
+  <p class="explain">Growth always increases your capacity. Think bigger, and you become ready to carry more.</p>
+</section>
+
+<section class="slide">
+  <div class="num">Law 15</div>
+  <h1>The Law of Contribution</h1>
+  <p class="statement">Personal growth ultimately enables you to mentor and uplift others.</p>
+  <p class="explain">The highest purpose of growing yourself is to help others grow too.</p>
+</section>
+
+<div class="bar" id="bar"></div>
+<div class="nav">
+  <button id="prev" aria-label="Previous slide">&#8592;</button>
+  <span id="count"></span>
+  <button id="next" aria-label="Next slide">&#8594;</button>
+</div>
+
+<script>
+  const slides = document.querySelectorAll('.slide');
+  let i = 0;
+  function show(n) {
+    i = Math.max(0, Math.min(slides.length - 1, n));
+    slides.forEach((s, k) => s.classList.toggle('active', k === i));
+    document.getElementById('count').textContent = (i + 1) + ' / ' + slides.length;
+    document.getElementById('bar').style.width = ((i + 1) / slides.length * 100) + '%';
+  }
+  document.getElementById('prev').onclick = () => show(i - 1);
+  document.getElementById('next').onclick = () => show(i + 1);
+  document.addEventListener('keydown', e => {
+    if (['ArrowRight', 'PageDown', ' ', 'Enter'].includes(e.key)) show(i + 1);
+    if (['ArrowLeft', 'PageUp', 'Backspace'].includes(e.key)) show(i - 1);
+    if (e.key === 'Home') show(0);
+    if (e.key === 'End') show(slides.length - 1);
+  });
+  let startX = null;
+  document.addEventListener('touchstart', e => startX = e.touches[0].clientX);
+  document.addEventListener('touchend', e => {
+    if (startX === null) return;
+    const dx = e.changedTouches[0].clientX - startX;
+    if (Math.abs(dx) > 50) show(i + (dx < 0 ? 1 : -1));
+    startX = null;
+  });
+  show(0);
+</script>
+</body>
+</html>
